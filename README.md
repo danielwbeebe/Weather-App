@@ -16,18 +16,16 @@ This app was created used React. The style/formatting for the app is constructed
 
 Here is the code for the render method used in App.js:
 
-  render() {
-    return (
+    render() {
+      return (
       <div className="App">
         <Header />
         <main>
           <div>
             <Previous className="previous" prevZips={this.state.prevZips} />
           </div>
-
           <div className="search">
             <h2>Enter ZIP Code</h2>
-
               <form onSubmit={this.handleSubmit}>
                 <label>
                   <input id="form" type="number" value={this.state.value} onChange={this.handleChange} />
@@ -36,9 +34,8 @@ Here is the code for the render method used in App.js:
               </form>
             {this.renderWeatherDetails()}
           </div>
-
         </main>
         <Footer />
       </div>
-    )
-  };
+      )
+    };
